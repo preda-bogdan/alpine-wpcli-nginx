@@ -17,6 +17,7 @@ RUN echo 'http://dl-4.alpinelinux.org/alpine/latest-stable/main/' >> /etc/apk/re
     php7-zip \
     php7-tokenizer \
     php7-json \
+    php7-redis \
     php7-zlib \
     php7-xml \
     php7-pdo \
