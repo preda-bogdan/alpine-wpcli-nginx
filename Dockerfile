@@ -61,7 +61,7 @@ COPY files/php-fpm.conf /etc/php7/
 COPY files/run.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-RUN curl -O https://github.com/wp-cli/wp-cli/releases/download/v2.0.0/wp-cli-2.0.0.phar && mv wp-cli-2.0.0.phar wp-cli.phar&& chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp && chown nginx:nginx /usr/bin/wp
+RUN curl -O https://github.com/wp-cli/wp-cli/releases/download/v2.0.0/wp-cli-2.0.0.phar && mv wp-cli-2.0.0.phar wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp && chown nginx:nginx /usr/bin/wp
 
 ENV WORDPRESS_VERSION 4.9.8
 ENV WORDPRESS_SHA1 40616b40d120c97205e5852c03096115c2fca537
