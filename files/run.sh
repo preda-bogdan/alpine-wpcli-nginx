@@ -6,7 +6,7 @@ chown -R nginx:nginx /DATA
 
 if [ ! -d /var/www/html ] ; then
   mkdir -p /var/www/html
-#  chown nginx:nginx /DATA/htdocs
+  chown nginx:nginx /var/www/html
 fi
 
 
